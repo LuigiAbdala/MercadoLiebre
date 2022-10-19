@@ -1,0 +1,391 @@
+/* COLORES QUE SE UTILIZARAN EN LA PAGINA WEB */
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.banner{
+    width: 100%;
+}
+/* <--------------* ENCABEZADO *-------------> */
+.main-header{
+    background-color: var(--Amarillo);
+    padding: 18px;
+    margin:auto;
+    position: relative;
+}
+
+.logo{
+    width: 50%;   
+}
+
+.main-header-topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar input{
+    width: 100%;
+    background-color:white;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.compra-en{
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    padding: 20px;
+}
+
+.burger-menu{
+    color: white;
+    text-align: center;
+}
+
+.fa-bars{
+    background-color: var(--Celeste);
+    padding: 12px;
+    border-radius: 15%;
+    font-size: 25px;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    color: var(--Gris-oscuro);
+    display: inline-block;/*  todos las etiquetas "a" son elementos de linea */
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+/* <--------------* MAIN/PRODUCTOS*-------------> */
+main{
+    background-color: var(--Gris-claro);
+    width: 90vw;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+.articulosflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produc{
+    margin-bottom: 10px;
+    margin: auto;
+    position: relative;  
+    width: 80%; 
+}
+
+.produc img{
+    width: 100%;
+}
+
+.info-produc{
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white
+}
+
+.preciodescuento{
+    display: flex;
+    justify-content: flex-start;
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+
+.descripcion{
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 85px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: opacity 350ms;
+}
+
+.descripcion:hover{
+    opacity: 1;
+}
+
+.fa-truck{
+    color: #39b54a;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #39b54a;
+    position: absolute;
+    right: 20px;
+    bottom: 75px;
+    transition: rotate 350ms;   /* FUNCION ROTATE PARA ROTAR EL CAMIONCITO */
+}
+
+.fa-truck:hover{
+    transform:rotate(270deg) ;
+}
+
+/* <--------------* FOOTER *-------------> */
+.foot{
+    border: 1px solid var(--Gris-claro);
+    width: 90vw;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+footer{
+    background-color: white;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.descripfoot{
+    font-size: 12px;
+}
+
+.descripfoot1{  
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.fa-credit-card{
+    color: #1259c3;
+    transition: color 350ms;
+    margin-bottom: 10px;
+}
+.fa-credit-card:hover{
+    color: var(--Amarillo);
+    margin-bottom: 10px;
+}
+.fa-gift{
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+.fa-gift:hover{
+    color: var(--Amarillo);
+    margin-bottom: 10px;
+}
+
+.fa-user-shield{
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+.fa-user-shield:hover{
+    color: var(--Amarillo);
+    margin-bottom: 10px;
+}
+
+
+
+/* <-------------FORMULARIO---------------> */
+/* REGISTRO */
+h1{
+    text-align: center;
+}
+.form-registro{
+    padding: 20px 15px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.control{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.control label{
+    margin-bottom: 5px;
+    font-style: italic;
+    width: 80%;
+}
+.boton-enviar{
+    background-color: #1259c3;
+    color:white;
+    border: none;
+    font-size: 14px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+.boton-borrar{
+    background-color: var(--Amarillo);
+    color: var(--Azul);
+    border: none;
+    font-size: 14px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+/* FORMULARIO LOGIN */
+.formulario{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    background-color:rgba(0,0,0,0.1);
+}
+
+.login{
+    background-color: rgba(0,0,0,0.1);
+    margin: auto;
+}
+.login{
+
+    margin-bottom: 10px;
+    padding: 10px 50px;
+    border-color: #0022AA;
+    text-align: center;
+}
+.login input{
+    font-style: italic;
+    width:50%;
+    text-align: center;
+    border-color: #0022AA;
+    border-radius: 8%;
+}
+.boton{
+    padding: 10px 50px;
+    background-color:var(--Amarillo);
+    text-align: center;
+    transition: color 600ms;
+    border: none;
+    width: 50%;
+}
+.boton:hover{
+    background-color: #0022AA;
+}
+
+
+
+/* <--------------* media queries*-------------> */
+
+@media (min-width: 361px){
+    /* para tablet */.descripcion{
+        display: block;
+    }
+    
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .produc{
+        width: 40% ;
+    }
+
+    
+    .form-registro{
+        width: 90%;
+    }
+
+    .formulario{
+        width: 80%;
+    }
+
+}
+ 
+
+@media (min-width: 769px){ 
+    /* para desktop */
+
+    .produc{
+        width: 20% ;
+    }
+
+    .main-header-topbar{
+        display: flex;
+        justify-content: space-between; /* para espaciar elementos entre si */
+        
+    }
+    .search-bar{
+        width: 25%;
+        margin: auto;
+        text-align: center;
+    }
+    .logo{
+        width:25% ;
+        margin: auto;
+    }
+    .compra-en{
+       display: flex;
+        margin: auto;
+        
+    }
+    .burger-menu{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul{
+        display: flex; 
+}  
+    }
+    .navbar li{
+        margin: 0 7px;
+    }
+
+    .foot{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-registro{
+        width: 60%;
+    }
+    
+    .formulario{
+        width: 60%;
+    }
