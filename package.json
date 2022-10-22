@@ -1,12 +1,10 @@
 {
   "name": "mercadoliebre",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "nodemon app.js",
-    "start": "node app"
-
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +12,14 @@
   "dependencies": {
     "express": "^4.18.2",
     "moment": "^2.29.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuigiAbdala/MercadoLiebre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LuigiAbdala/MercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/LuigiAbdala/MercadoLiebre#readme",
+  "description": ""
 }
